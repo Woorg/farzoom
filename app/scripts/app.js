@@ -28,7 +28,7 @@ import 'magnific-popup';
 		// Slider
 
 
-		let $slider = $('.slider__list');
+		const $slider = $('.slider__list');
 			if ( $slider.length > 0 ) {
 				$slider.slick({
 					// slidesToShow: 3,
@@ -78,7 +78,9 @@ import 'magnific-popup';
 
 			// Popup
 
-			$('.popup-open').magnificPopup({
+			const $popup = $('.popup-open');
+
+			$popup.magnificPopup({
 				type: 'inline',
 				mainClass: 'popup-bg',
 				closeBtnInside: false,
@@ -86,13 +88,12 @@ import 'magnific-popup';
 			});
 
 
+			const $popupForm = $('.popup__form');
 
-
-			$('.popup__form').submit(function (event) {
-				console.log(event);
+			$popupForm.submit(function (event) {
+				// console.log(event);
 
 				openPopup();
-
 
 				function openPopup() {
 

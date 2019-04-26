@@ -10,7 +10,7 @@
 			padding-top 110px
 	&__title
 		margin-bottom 80px
-		padding-right 410px
+		padding-right 280px
 		+r($d)
 			margin-bottom 102px
 			padding-right 160px
@@ -25,19 +25,56 @@
 				display block
 
 	&__button
+		margin-left auto
 		margin-bottom 80px
+		cursor pointer
+		white-space nowrap
+		+rmin($d)
+			order -1
+			margin-left 0
+		+r($d)
+			order 1
+			margin-left auto
 		+r($tL)
-			margin-bottom 0
+			margin-bottom 40px
+			margin-left 0
+		+r($m)
+			position fixed
+			z-index 1
+			bottom 30px
+			right 30px
+			left 30px
+			text-align center
+
 	&__row
 		margin-bottom 190px
+		display flex
+		align-items flex-start
+		+rmin($dM)
+			flex-flow column
+		+r($d)
+			flex-flow row nowrap
 		+r($tL)
 			margin-bottom 0
+			flex-flow row wrap
 		+r($m)
 			margin-bottom 0
+	&__col-w
+		// max-width 752px
+		max-width 852px
+		width 100%
+		display flex
+		justify-content space-between
+		+r($tL)
+			max-width 100%
+			flex-flow row wrap
+			justify-content flex-start
 	&__col
 		margin-bottom 30px
+
 		+r($tL)
 			margin-bottom 30px
+			width 100%
 		+r($m)
 			margin-bottom 30px
 	&__text
@@ -53,9 +90,25 @@
 		order -1
 		width 100%
 		text-align left
+
+		// +rmin($d)
+		// 	margin-left auto
+		// 	padding-left 50px
+		// 	padding-right 50px
+		// 	flex 1 1 100%
+
+		+rmin($dL)
+			order -1
+			width 100%
+
 		+r($d)
+			margin-left auto
+			padding-left 25px
+			padding-right 25px
 			order 1
 			width auto
+		+r($tL)
+			margin-left 0
 		+r($m)
 			position fixed
 			z-index 1

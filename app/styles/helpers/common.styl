@@ -43,13 +43,30 @@
 	margin-right -50px
 	display flex
 	flex-flow row wrap
+	+r($d)
+		flex-flow row nowrap
+		margin-left -25px
+		margin-right -25px
+	+r($tL)
+		flex-flow row wrap
 
 .col
 	padding-right 50px
 	padding-left 50px
 
-	width 450px
+	// width 450px
+	width 356px
 
+	// flex 0 1 auto
+	// +rmin($d)
+	// 	width auto
+	// 	flex 1 1 48%
+	// +rmin($dL)
+	// 	width 450px
+	// 	flex 0 1 auto
+	// +r($d)
+	// 	padding-right 25px
+	// 	padding-left 25px
 	+r($tL)
 		width 100%
 	+r($m)
@@ -83,24 +100,24 @@
 
 .button
 	border none
-	border-radius 12px
+	border-radius 8px
 
-	padding-top 30px
-	padding-right 58px
-	padding-bottom 31px
-	padding-left 58px
+	padding-top 20px
+	padding-right 38px
+	padding-bottom 21px
+	padding-left 38px
 
 	display inline-block
 	background-color #ff401e
 	color #ffffff
 	font-family $t
-	font-size 24px
+	font-size 16px
 	line-height 1
 	font-weight 700
 	letter-spacing 0.64px
 	text-decoration none
 	tr(background-color .3s ease)
-	+r($d)
+	+rmin($dL)
 		padding-top 21px
 		padding-right 38px
 		padding-bottom 19px
