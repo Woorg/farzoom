@@ -1,0 +1,99 @@
+.popup
+	position absolute
+	top 50%
+	left 50%
+	margin auto
+	max-width 370px
+	width 100%
+	transform translate(-50%, -50%)
+	+r($m)
+		max-width 315px
+	&__title
+		margin-bottom 60px
+		font-family $t
+		font-size 22px
+		font-weight bold
+		text-transform uppercase
+		+r($m)
+			font-size 24px
+			text-transform none
+	&__field
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+
+	&__input
+		border none
+		padding-left 30px
+		padding-right 30px
+		width 100%
+		height 70px
+		border-radius 8px
+		background-color #1b3880
+		color #fff
+		font-family $mL
+		font-weight normal
+		font-size 24px
+		+placeholder()
+			color #fff
+		+r($m)
+			height 50px
+			font-size 16px
+		
+	&__button
+		margin-top 20px
+
+
+	&__icon
+		margin auto
+		margin-bottom 34px
+		width 77px
+		height 70px
+		img
+			max-width 100%
+			height auto
+	&__text
+		color #ffffff
+		font-family $mM
+		font-size 24px
+		font-weight normal
+		line-height 1.333
+
+
+.popup-bg
+	background-color rgba(32, 71, 166, 0.8)
+
+
+button.mfp-close
+	top 50px
+	right 250px
+	width 48px
+	height 48px
+	background url("../images/general/close-icon@3x.png") 0 0 no-repeat
+	background-size cover
+	opacity 1
+	text-indent -9999px
+	+rmin($d)
+		top 50px
+		right 250px
+	+r($d)
+		top 30px
+		right 135px
+	+r($m)
+		top 30px
+		right 30px
+		width 21px
+		height 21px
+		background url("../images/general/close-second@3x.png") 0 0 no-repeat
+		background-size cover
+
+	&:hover
+		opacity 0.8
+
+
+.mfp-content
+	position absolute
+	top 0
+	right 0
+	bottom 0
+	left 0

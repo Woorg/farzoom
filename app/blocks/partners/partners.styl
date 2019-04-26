@@ -1,0 +1,32 @@
+.partners
+	padding-bottom 70px
+	flex 1 1 auto
+	width 100%
+	+r($m)
+		padding-bottom 40px
+	&__title
+		margin-bottom 60px
+		font-family $mL
+		font-weight normal
+		font-size 26px
+		letter-spacing 0.69px
+		+r($m)
+			margin-bottom 28px
+			font-size 18px
+			letter-spacing 0.48px
+	&__list
+		display flex
+		+r($m)
+			flex-flow row wrap
+	&__item
+		margin-right 20px
+		margin-bottom 20px
+		width 74px
+		height 74px
+		+r($m)
+			margin-right 10px
+			margin-bottom 10px
+			width 37px
+			height 37px
+		&:last-child
+			margin-right 0

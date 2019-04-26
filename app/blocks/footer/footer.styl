@@ -1,0 +1,40 @@
+.footer
+	background-color #1b3880
+	&__in
+		padding-top 74px
+		padding-bottom 203px
+		display flex
+		+r($tL)
+			flex-wrap wrap
+		+r($m)
+			padding-top 30px
+			padding-bottom 80px
+	&__logo
+		+r($m)
+			display none
+
+	&__logo_mob
+		display none
+		+r($m)
+			display block
+
+	&__copyright
+		margin-left 82px
+		padding-top 9px
+		color #769dff
+		font-family $t
+		font-size 18px
+		font-weight 400
+		letter-spacing 0.48px
+		+r($tL)
+			margin-top 30px
+			margin-left 0
+			order 3
+			width 100%
+		+r($m)
+			margin-bottom 30px
+			font-size 14px
+			letter-spacing 0.37px
+
+	&__nav
+		margin-left auto

@@ -1,0 +1,31 @@
+.nav
+	&__list
+		display flex
+	&__item
+		margin-left 48px
+		color #ffffff
+		font-family $t
+		font-size 18px
+		font-weight 400
+		letter-spacing 0.48px
+		+r($m)
+			margin-left 20px
+			font-size 14px
+			letter-spacing 0.37px
+		&:first-child
+			margin-left 0
+	&__link
+		color currentColor
+		text-decoration none
+		tr(color .3s ease)
+		&:hover
+			color darken(#fff, 10)
+			tr(color .3s ease)
+
+.nav_second
+	.nav__item
+		+r($m)
+			margin-left 35px
+		&:first-child
+			+r($m)
+				margin-left 0

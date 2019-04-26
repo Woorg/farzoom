@@ -1,0 +1,68 @@
+.main
+	overflow hidden
+	&__in
+		padding-top 120px
+		+r($d)
+			padding-top 150px
+		+r($tL)
+			padding-bottom 20px
+		+r($m)
+			padding-top 110px
+	&__title
+		margin-bottom 80px
+		padding-right 410px
+		+r($d)
+			margin-bottom 102px
+			padding-right 160px
+		+r($tL)
+			margin-bottom 40px
+			padding-right 0
+		+r($m)
+			margin-right -5px
+			margin-bottom 40px
+		span
+			+r($d)
+				display block
+
+	&__button
+		margin-bottom 80px
+		+r($tL)
+			margin-bottom 0
+	&__row
+		margin-bottom 190px
+		+r($tL)
+			margin-bottom 0
+		+r($m)
+			margin-bottom 0
+	&__col
+		margin-bottom 30px
+		+r($tL)
+			margin-bottom 30px
+		+r($m)
+			margin-bottom 30px
+	&__text
+		color #b9cbf7
+		font-family $mL
+		font-size 26px
+		letter-spacing 0.7px
+		line-height 1.2
+		+r($m)
+			font-size 14px
+			letter-spacing 0.37px
+	&__col_cta
+		order -1
+		width 100%
+		text-align left
+		+r($d)
+			order 1
+			width auto
+		+r($m)
+			position fixed
+			z-index 1
+			bottom 0
+			right 0
+			left 0
+			padding-left 30px
+			padding-right 30px
+			display block
+			text-align center

@@ -1,0 +1,48 @@
+.slider
+	overflow hidden
+	&__in
+		position relative
+		padding-bottom 85px
+		height 664px
+		+r($m)
+			padding-bottom 50px
+			height 234px
+		+r($mS)
+			height 224px
+	&__list
+		position absolute
+		top 0
+		left 0
+		margin-right -16%
+		padding-left 15px
+		padding-right 0
+		display flex
+		+r($m)
+			padding-left 30px
+		+r($mS)
+			padding-left 15px
+	&__item
+		padding-right 50px
+		cursor pointer
+		+r($tS)
+			padding-right 25px
+		+r($m)
+			padding-right 18px
+
+	&__image
+		img
+			max-width 100%
+			height auto
+
+	.slick-slide
+		opacity .5
+		tr(opacity .3s ease)
+		+r($tS)
+			width 648px
+		+r($m)
+			width 248px
+
+	.slick-current
+		opacity 1
+		tr(opacity .3s ease)
+

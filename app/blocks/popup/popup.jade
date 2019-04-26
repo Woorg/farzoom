@@ -1,0 +1,20 @@
+mixin popup()
+	#popup.popup.mfp-hide&attributes(attributes)
+		h2.popup__title Запросить демонстрацию
+		form.popup__form(action="", method="post")
+			.popup__field
+				input.popup__input(type="text", name="name" value="", placeholder="Имя" required)
+			.popup__field
+				input.popup__input(type="text", name="email" value="", placeholder="Почта" required)
+			.popup__field
+				input.popup__input(type="text", name="phone" value="", placeholder="Номер вашего телефона" required)
+
+			input.popup__button.button.button_submit(type="submit", value="Отправить", placeholder="")
+
+
+
+mixin popup-success()
+	#popup-success.popup.mfp-hide&attributes(attributes)
+		.popup__icon
+			img(src="assets/images/general/check-icon@3x.png", alt="")
+		.popup__text Спасибо, мы свяжемся с вами!

@@ -1,0 +1,140 @@
+.page
+	position relative
+	min-height 100vh
+	display flex
+	flex-direction column
+	background-color #2147a6
+	color #fff
+	font-family $mL
+	font-size 26px
+	&__inner
+		flex 0 1 auto
+
+	&__bottom
+		.page__in
+			display flex
+			justify-content space-between
+			+r($d)
+				flex-wrap nowrap
+			+r($tL)
+				flex-wrap wrap
+
+.container
+	margin-right auto
+	margin-left auto
+	padding-left 15px
+	padding-right 15px
+	max-width 1200px
+	width 100%
+	+r($d)
+		max-width 1200px
+	+r($m)
+		padding-left 30px
+		padding-right 30px
+		max-width 375px
+	+r($mS)
+		padding-left 15px
+		padding-right 15px
+		max-width 320px
+	+rmin($dL)
+		max-width 2030px
+.row
+	margin-left -50px
+	margin-right -50px
+	display flex
+	flex-flow row wrap
+
+.col
+	padding-right 50px
+	padding-left 50px
+
+	width 450px
+
+	+r($tL)
+		width 100%
+	+r($m)
+		width 100%
+.col-half
+	padding-right 10px
+	padding-left 10px
+	width 630px
+	width ratio-percentage(610, 1240)
+	&:last-child
+		margin-right 0
+
+.title
+	color #fff
+	font-family $t
+	font-weight 500
+	font-size 21px
+	line-height 1.363
+	+r($tL)
+		font-size 60px
+		line-height 1.25
+	+r($m)
+		font-size 22px
+		line-height 1.363
+	+rmin($tL)
+		font-size 60px
+		line-height 1.25
+	+rmin($dL)
+		font-size 90px
+		line-height 1.33333333333333
+
+.button
+	border none
+	border-radius 12px
+
+	padding-top 30px
+	padding-right 58px
+	padding-bottom 31px
+	padding-left 58px
+
+	display inline-block
+	background-color #ff401e
+	color #ffffff
+	font-family $t
+	font-size 24px
+	line-height 1
+	font-weight 700
+	letter-spacing 0.64px
+	text-decoration none
+	tr(background-color .3s ease)
+	+r($d)
+		padding-top 21px
+		padding-right 38px
+		padding-bottom 19px
+		padding-left 38px
+		font-size 16px
+		letter-spacing 0.43px
+		border-radius 8px
+	&:hover
+		background-color darken(#ff401e, 10)
+		tr(background-color .3s ease)
+
+.button_submit
+	border-radius 2px
+	width 100%
+	font-family $mM
+	font-size 24px
+	font-weight normal
+	box-shadow 0 0 10px rgba(0, 0, 0, 0.1)
+	+r($m)
+		padding-top 13px
+		padding-bottom 13px
+		font-size 20px
+
+
+.wysiwig
+	p
+		margin-bottom 84px
+		font-family $mL
+		font-size 22px
+		font-weight normal
+		letter-spacing 0.55px
+		line-height 1.6
+		&:last-child
+			margin-bottom 0
+
+
+
